@@ -3,7 +3,7 @@ package shigemi;
 import java.util.Date;
 
 /**
- * Created by csmashiko.r on 2018/02/28.
+ * Created by csmashiko.r on 2018/02/28./
  */
 
 public class ChildStatus {
@@ -14,19 +14,19 @@ public class ChildStatus {
 
     public ChildStatus getChildStatus(){    //ゲッター
         ChildStatus CS = new ChildStatus(); //インスタンスを生成
-        CS.name = name;
-        CS.birth = birth;
-        CS.sex = sex;
-        CS.nickName = nickName;
+        CS.name = this.name;
+        CS.birth = this.birth;
+        CS.sex = this.sex;
+        CS.nickName = this.nickName;
         return CS;                         //ChildStatusを返却
 
     }
 
     public void setChildStatus(ChildStatus CS){ //セッター
-        name = CS.name;
-        birth = CS.birth;
-        sex = CS.sex;
-        nickName = CS.nickName;
+        this.name = CS.name;
+        this.birth = CS.birth;
+        this.sex = CS.sex;
+        this.nickName = CS.nickName;
     }                                           //返却なし
 
 }
