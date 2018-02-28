@@ -1,4 +1,3 @@
-package Shigemi;
 
 import java.util.Date;
 
