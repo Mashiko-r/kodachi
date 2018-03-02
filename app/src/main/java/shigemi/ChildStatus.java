@@ -1,9 +1,11 @@
-package shigemi;
+package Shigemi;
 
 import java.util.Date;
 
 /**
  * Created by csmashiko.r on 2018/02/28./
+ * アプリ内に登録される子供のデータ
+ * 二人目以降は未対応
  */
 
 public class ChildStatus {

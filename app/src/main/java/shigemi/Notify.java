@@ -1,4 +1,4 @@
-package shigemi;
+package Shigemi;
 
 /**
  * Created by cskawasaki.k on 2018/02/28.
