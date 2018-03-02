@@ -11,13 +11,22 @@ public class Notify {
     private int picNotify = 2;  //初期設定写真通知週ごと通知
 
     //バースデイ通知
-    public boolean getBirthNotify() {
+    public boolean getBirthNotifymonthly() {
         return birthNotify;
-    }
+    }   //月ごと
 
     public void setBirthNotify(boolean birthNotify) {
         this.birthNotify = birthNotify;
-    }
+    }//月ごと
+
+    public boolean getBirthNotifyyearly() {
+        return birthNotify;
+    }//年ごと
+
+    public void setBirthNotifyyearly(boolean birthNotify) {
+        this.birthNotify = birthNotify;
+    }   //年ごと
+
 
     //知恵袋回答通知
     public boolean getAnsNotify() {
