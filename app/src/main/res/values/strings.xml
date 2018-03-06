@@ -78,13 +78,13 @@
     <string name="monthly">月ごとに通知する</string>
     <string name="yearly">年ごとに通知する</string>
     <string name="setting_notify_chiebag">知恵袋通知</string>
-    <string name="getting_answer_notify" >質問へ回答が来たとき</string>
+    <string name="getting_answer_notify">質問へ回答が来たとき</string>
 
     <string-array name="pic_notify_timing">
         <item>選択…</item>
-    <item>しない</item>
-    <item>日ごと</item>
-    <item>週ごと</item>
+        <item>しない</item>
+        <item>日ごと</item>
+        <item>週ごと</item>
     </string-array>
     <string name="getting_good_notify">回答へgoodが来たとき</string>
     <string name="setting_notify_picture">写真通知</string>
@@ -98,4 +98,7 @@
     <string name="plusbutton">写真を撮る</string>
     <string name="viewerbutton">ビューアへ移行すｒ</string>
     <string name="chiebagbutton">知恵袋へ移行する</string>
+    <string name="profilesetting">プロフィール設定</string>
+    <string name="settingnotify">通知設定</string>
+    <string name="homesetting">home設定</string>
 </resources>

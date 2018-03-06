@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void settingButtonTapped(View view){                                                     //設定ボタンがタップされた時。設定画面へ遷移する
-        Intent intent =new Intent(this,SettingActivity.class);
+        Intent intent =new Intent(this,ChooseSettingActivity.class);
         startActivity(intent);
     }
 
