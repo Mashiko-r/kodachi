@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void debuggButtonTapped(View view){
-
+        //最終的に削除
 
     }
 
