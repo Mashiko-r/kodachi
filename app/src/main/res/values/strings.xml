@@ -73,4 +73,29 @@
     <string name="pref_ringtone_silent">Silent</string>
 
     <string name="pref_title_vibrate">Vibrate</string>
+    <string name="kakutei">確定</string>
+    <string name="setting_notify_birthday">バースデイ通知</string>
+    <string name="monthly">月ごとに通知する</string>
+    <string name="yearly">年ごとに通知する</string>
+    <string name="setting_notify_chiebag">知恵袋通知</string>
+    <string name="getting_answer_notify" >質問へ回答が来たとき</string>
+
+    <string-array name="pic_notify_timing">
+        <item>選択…</item>
+    <item>しない</item>
+    <item>日ごと</item>
+    <item>週ごと</item>
+    </string-array>
+    <string name="getting_good_notify">回答へgoodが来たとき</string>
+    <string name="setting_notify_picture">写真通知</string>
+    <string name="picNotify">現在の設定:しない</string>
+    <string name="debug">テスト用です。</string>
+    <string name="backbutton">戻る</string>
+    <string name="debugbutton">虫退治</string>
+    <string name="Settings">設定</string>
+    <string name="home_comment">ここにはコメントが入るよ！改行とかに対応できるといいな！</string>
+    <string name="child_name">楓くん</string>
+    <string name="plusbutton">写真を撮る</string>
+    <string name="viewerbutton">ビューアへ移行すｒ</string>
+    <string name="chiebagbutton">知恵袋へ移行する</string>
 </resources>
