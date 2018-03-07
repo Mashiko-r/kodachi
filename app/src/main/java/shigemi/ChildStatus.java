@@ -35,9 +35,13 @@ public class ChildStatus {
         editor.commit();
     }
 
-    //誕生日はIntで管理します
-    //まだ待ってて
-
+    public int getBirthYear(){
+        return pref.getInt("CHILD_BIRTH_YEAR",2000);
+    }
+    public void setBirthYear(int i){
+        editor.putInt("CHILD_BIRTH_YEAR",i);
+        editor.commit();
+    }
 
     public int getSex(){
         return pref.getInt("CHILD_SEX",0);

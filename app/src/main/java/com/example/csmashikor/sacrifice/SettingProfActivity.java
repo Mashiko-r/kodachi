@@ -5,7 +5,9 @@ import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import Shigemi.ChildStatus;
@@ -13,13 +15,29 @@ import Shigemi.ChildStatus;
 public class SettingProfActivity extends AppCompatActivity {
 
     ChildStatus CS = new ChildStatus();
-    private EditText editcall = findViewById(R.id.editCall);
+    int birthyear;
+    //EditText editcall = findViewById(R.id.editCall);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting_prof);
         initialSetting();
+
+        Spinner year = findViewById(R.id.year);     //西暦の管理
+        year.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                birthyear = i + 2000;
+
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
     }
 
     public void boyButtonTapped(View view){
@@ -44,18 +62,26 @@ public class SettingProfActivity extends AppCompatActivity {
         initialSetting();
     }
 
-    public void otherButtonTapped(View view){
-
+    public void commitButtonTapped(View view){
+        EditText editcall = findViewById(R.id.editCall);
+        String nickname = editcall.getText().toString();
+        CS.setNickName(nickname);
+        initialSetting();
         //IMEを開く
     }
 
     public void nameChangeButtonTapped(View view){
+        EditText editname = findViewById(R.id.editName);
+        String name = editname.getText().toString();
+        CS.setName(name);
+        initialSetting();
 
     }
 
     public void initialSetting(){
-        TextView childName = findViewById(R.id.namestring);
+        EditText childName = findViewById(R.id.editName);
         TextView childNickName =findViewById(R.id.calledby);
+
 
         childName.setText(CS.getName());
         childNickName.setText(CS.getNickName());

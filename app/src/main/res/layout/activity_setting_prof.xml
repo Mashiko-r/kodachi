@@ -44,21 +44,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profbaby" />
 
-    <TextView
-        android:id="@+id/namestring"
-        android:layout_width="97dp"
-        android:layout_height="29dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/baby_name"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintEnd_toStartOf="@+id/calledby"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/name"
-        app:layout_constraintTop_toBottomOf="@+id/profbaby" />
-
     <Spinner
         android:id="@+id/year"
         android:layout_width="108dp"
@@ -76,12 +61,12 @@
         android:layout_height="22dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="@string/birthdayname"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.158"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/namestring" />
+        app:layout_constraintTop_toBottomOf="@+id/editName" />
 
     <Spinner
         android:id="@+id/month"
@@ -150,9 +135,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="108dp"
+        android:layout_marginTop="24dp"
         android:text="@string/kun_san"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/namestring" />
+        app:layout_constraintTop_toBottomOf="@+id/profbaby" />
 
     <TextView
         android:id="@+id/call"
@@ -204,15 +190,43 @@
         app:layout_constraintTop_toBottomOf="@+id/call" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/nameCommitButton"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="396dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="8dp"
+        android:onClick="nameChangeButtonTapped"
+        android:text="@string/kakutei"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profbaby" />
+
+    <Button
+        android:id="@+id/nickNameCommitButton"
         android:layout_width="55dp"
         android:layout_height="40dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="60dp"
         android:layout_marginTop="8dp"
+        android:onClick="commitButtonTapped"
         android:text="@string/kakutei"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editCall"
         app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="100dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/Settings"
+        app:layout_constraintEnd_toStartOf="@+id/calledby"
+        app:layout_constraintStart_toEndOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/profbaby" />
 </android.support.constraint.ConstraintLayout>
