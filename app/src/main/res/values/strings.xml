@@ -87,7 +87,7 @@
         <item>週ごと</item>
     </string-array>
 
-    <string-array name= "prof_year">
+    <string-array name="prof_year">
         <item>2000</item>
         <item>2001</item>
         <item>2002</item>
@@ -112,7 +112,7 @@
         <item>2021</item>
     </string-array>
 
-    <string-array name = "month">
+    <string-array name="month">
         <item>1</item>
         <item>2</item>
         <item>3</item>
@@ -182,10 +182,15 @@
     <string name="babysex">性別：</string>
     <string name="girl">女の子</string>
     <string name="boy">男の子</string>
-    <string name="kun_san" >さん</string>
+    <string name="kun_san">さん</string>
     <string name="called">呼び名：</string>
     <string name="kun">くん</string>
     <string name="chan">ちゃん</string>
     <string name="other">その他</string>
     <string name="input">入力</string>
+    <string name="homePicSetting">home設定</string>
+    <string name="picBotton">・・・</string>
+    <string name="picRadio1">お気に入りからランダム</string>
+    <string name="picRadio２">すべての写真からランダム</string>
+    <string name="picRadio３">選択する</string>
 </resources>

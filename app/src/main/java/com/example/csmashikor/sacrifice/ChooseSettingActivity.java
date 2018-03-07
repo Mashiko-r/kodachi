@@ -28,7 +28,8 @@ public class ChooseSettingActivity extends AppCompatActivity {
     }//通知設定画面へ遷移
 
     public void homeButtonTapped(View view){
-
+        Intent intent = new Intent(this,SettingHomeActivity.class);
+        startActivity(intent);
     }//home設定画面へ遷移(空)
 
 

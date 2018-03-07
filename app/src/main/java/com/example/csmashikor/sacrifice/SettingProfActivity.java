@@ -87,5 +87,9 @@ public class SettingProfActivity extends AppCompatActivity {
         childNickName.setText(CS.getNickName());
     }
 
+    public void onBackButtonTapped(View view){
+        finish();
+    }
+
 
 }
