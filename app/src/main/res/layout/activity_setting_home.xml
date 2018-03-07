@@ -29,19 +29,21 @@
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toTopOf="@+id/picRadioGroup"
+        app:layout_constraintEnd_toStartOf="@+id/picRadioGroup"
+        app:layout_constraintStart_toStartOf="@+id/picRadioGroup"
         app:layout_constraintTop_toBottomOf="@+id/homeSetting"
-        tools:layout_editor_absoluteX="60dp"
         tools:text="@string/homePicSetting" />
 
     <RadioGroup
         android:id="@+id/picRadioGroup"
-        android:layout_width="251dp"
-        android:layout_height="95dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
         android:textAlignment="center"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="91dp">
+        app:layout_constraintTop_toBottomOf="@+id/button3">
 
         <RadioButton
             android:id="@+id/picRadio1"
@@ -69,14 +71,14 @@
 
     <Button
         android:id="@+id/picBotton"
-        android:layout_width="70"
-        android:layout_height="35"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="60dp"
         android:text="Button"
         app:layout_constraintEnd_toEndOf="@+id/picRadioGroup"
-        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/picRadioGroup"
         app:layout_constraintTop_toTopOf="@+id/picRadioGroup"
         tools:text="@string/picBotton" />
@@ -101,6 +103,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:onClick="onBackButtonTapped"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.028"
         app:layout_constraintLeft_toLeftOf="parent"
