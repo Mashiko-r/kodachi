@@ -72,7 +72,7 @@ public class Notify{
 
     //写真通知
     public int getPicNotify() {
-        return pref.getInt("GET_PIC_NOTIFY",0);
+        return pref.getInt("GET_PIC_NOTIFY",3);
     }
 
     public void setPicNotify(int picNotify) {

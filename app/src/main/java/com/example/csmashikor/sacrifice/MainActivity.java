@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        contextOfApplication = getApplicationContext();
+        contextOfApplication = getApplicationContext(); //いじらんといて
     }
 
     public void settingButtonTapped(View view){                                                     //設定ボタンがタップされた時。設定画面へ遷移する

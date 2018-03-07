@@ -26,14 +26,15 @@ import Shigemi.Notify;
 
 public class SettingActivity extends AppCompatActivity{
     Notify notify = new Notify();   //ここで無理やりtrueで作らされてる説
-    //private TextView debugger;
+    private TextView debugger;
+    private int currentPicNotify;
 
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        //debugger = findViewById(R.id.debugger);
+
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
@@ -44,13 +45,17 @@ public class SettingActivity extends AppCompatActivity{
         Spinner spinner = findViewById(R.id.picNotifySpinner);
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {      //プルダウンの中から一つ選んだ時に呼び出されるメソッド、intとlongは0を含む何番目かを表示する
                 Spinner spinner = (Spinner) adapterView;
                 String item = (String)spinner.getSelectedItem();
                 if(!item.isEmpty()){
-                    //debugger.setText(item + "が選択されたんじゃね？");
+                    debugger = findViewById(R.id.debugger);
+                    debugger.setText(item + "が選択されたんじゃね？" + i + "←intの値" + l + "longの値");
                     TextView picnotify = findViewById(R.id.picNotifyNow);
-                    //picnotify.setText("現在の設定:"+item);
+                    picnotify.setText("現在の設定:"+item);
+
+                    currentPicNotify = i;       //currentPicNotifyに設定を投げる
+
                 }
             }
 
@@ -61,6 +66,7 @@ public class SettingActivity extends AppCompatActivity{
             }
         });
         initialSetting();   //初期値を全部入れてくれるいい奴
+        showPicNotify();
     }
 
      public void initialSetting(){
@@ -77,7 +83,27 @@ public class SettingActivity extends AppCompatActivity{
             Switch good = findViewById(R.id.gettingGood);       //質問にGoodが来る設定の初期値をー
             good.setChecked(notify.getGoodNotify());
 
-     }
+            TextView picnotifytext =findViewById(R.id.picNotifyNow);
+            currentPicNotify = notify.getPicNotify();
+            switch(currentPicNotify){
+                default:
+                case 0:
+                    break;
+                case 1:
+                    picnotifytext.setText("現在の設定:しない");
+
+                    break;
+                case 2:
+                    picnotifytext.setText("現在の設定:日ごと");
+                    break;
+
+                case 3:
+                    picnotifytext.setText("現在の設定:週ごと");
+                    break;
+
+            }
+
+     }  //起動時に保存されたデータを読み出す
 
      public void commitButtonTapped(View view){
          Switch monthly = findViewById(R.id.monthly);
@@ -90,16 +116,38 @@ public class SettingActivity extends AppCompatActivity{
          notify.setBirthNotifyyearly(yearly.isChecked());
          notify.setAnsNotify(answer.isChecked());
          notify.setGoodNotify(good.isChecked());
+         notify.setPicNotify(currentPicNotify);
 
-     }  //確定ボタンが押された時のメソッド
+}  //確定ボタンが押された時のメソッド
 
     public void backButtonTapped(View view){
          finish();
-    }
+    }   //戻るボタンが押された時のメソッド
+
     public void debuggButtonTapped(View view){
         TextView debugger = findViewById(R.id.debugger);
-        debugger.setText(String.valueOf("はい"));
-    }
+        debugger.setText(String.valueOf(String.valueOf(notify.getPicNotify())));
+        showPicNotify();
+    }   //デバッグボタン
+
+    public void showPicNotify(){
+        TextView picnotifytext =findViewById(R.id.picNotifyNow);
+        currentPicNotify = notify.getPicNotify();
+        switch(currentPicNotify) {
+
+            case 1:
+                picnotifytext.setText("現在の設定:しない");
+
+                break;
+            case 2:
+                picnotifytext.setText("現在の設定:日ごと");
+                break;
+            default:
+            case 3:
+                picnotifytext.setText("現在の設定:週ごと");
+                break;
+        }
+    }   //写真通知は今どんな設定なのか教えてくれる
 
 
 

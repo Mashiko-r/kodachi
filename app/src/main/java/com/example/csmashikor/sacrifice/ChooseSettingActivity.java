@@ -18,8 +18,9 @@ public class ChooseSettingActivity extends AppCompatActivity {
     }//戻る
 
     public void profileButtonTapped(View view){
-
-    }//プロフィール設定画面へ遷移(空)
+        Intent intent = new Intent(this, SettingProfActivity.class);
+        startActivity(intent);
+    }//プロフィール設定画面へ遷移
 
     public void notifyButtonTapped(View view){
         Intent intent = new Intent(this,SettingActivity.class);
