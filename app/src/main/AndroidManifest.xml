@@ -24,9 +24,8 @@
         <activity
             android:name=".SettingActivity"
             android:label="@string/title_activity_settings" />
-
-        <activity android:name=".ChooseSettingActivity" />
-        <activity android:name=".SettingProfActivity"></activity>
+        <activity android:name=".SettingActivity" />
+        <activity android:name=".ChooseSettingActivity"></activity>
     </application>
 
 </manifest>
