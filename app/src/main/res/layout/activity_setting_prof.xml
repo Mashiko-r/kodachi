@@ -85,7 +85,7 @@
 
     <Spinner
         android:id="@+id/month"
-        android:layout_width="81dp"
+        android:layout_width="95dp"
         android:layout_height="24dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -127,6 +127,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:onClick="boyButtonTapped"
         android:text="@string/boy"
         app:layout_constraintEnd_toStartOf="@+id/womanbutton"
         app:layout_constraintHorizontal_bias="0.84"
@@ -139,6 +140,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="92dp"
         android:layout_marginTop="8dp"
+        android:onClick="girlButtonTapped"
         android:text="@string/girl"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sex" />
@@ -171,6 +173,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginTop="8dp"
+        android:onClick="kunButtonTapped"
         android:text="@string/kun"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/call" />
@@ -182,18 +185,21 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:onClick="chanButtonTapped"
         android:text="@string/chan"
-        app:layout_constraintEnd_toStartOf="@+id/callbyother"
+        app:layout_constraintEnd_toStartOf="@+id/editText"
         app:layout_constraintStart_toEndOf="@+id/callbykun"
         app:layout_constraintTop_toBottomOf="@+id/call" />
 
-    <Button
-        android:id="@+id/callbyother"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="60dp"
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="88dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="56dp"
         android:layout_marginTop="8dp"
-        android:text="@string/other"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/input"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/call" />
 </android.support.constraint.ConstraintLayout>

@@ -36,6 +36,7 @@ public class ChildStatus {
     }
 
     //誕生日はIntで管理します
+    //まだ待ってて
 
 
     public int getSex(){

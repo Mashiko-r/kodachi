@@ -187,4 +187,5 @@
     <string name="kun">くん</string>
     <string name="chan">ちゃん</string>
     <string name="other">その他</string>
+    <string name="input">入力</string>
 </resources>
