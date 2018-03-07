@@ -12,10 +12,13 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.w3c.dom.Text;
+
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import Shigemi.ChildStatus;
 import Shigemi.Notify;
 
 public class MainActivity extends AppCompatActivity {
@@ -26,6 +29,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         contextOfApplication = getApplicationContext(); //いじらんといて
+        initiater();
+
+    }
+
+    public void initiater(){
+        ChildStatus CS = new ChildStatus();
+        TextView childname = findViewById(R.id.ChildName);
+        childname.setText(CS.getName()+CS.getNickName());
+
     }
 
     public void settingButtonTapped(View view){                                                     //設定ボタンがタップされた時。設定画面へ遷移する
@@ -34,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void debuggButtonTapped(View view){
+        initiater();
         //最終的に削除
 
     }
