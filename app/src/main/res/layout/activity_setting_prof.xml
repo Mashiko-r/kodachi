@@ -187,12 +187,12 @@
         android:layout_marginTop="8dp"
         android:onClick="chanButtonTapped"
         android:text="@string/chan"
-        app:layout_constraintEnd_toStartOf="@+id/editText"
+        app:layout_constraintEnd_toStartOf="@+id/editCall"
         app:layout_constraintStart_toEndOf="@+id/callbykun"
         app:layout_constraintTop_toBottomOf="@+id/call" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editCall"
         android:layout_width="88dp"
         android:layout_height="45dp"
         android:layout_marginEnd="56dp"
@@ -202,4 +202,17 @@
         android:text="@string/input"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/call" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/kakutei"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editCall"
+        app:layout_constraintVertical_bias="0.0" />
 </android.support.constraint.ConstraintLayout>

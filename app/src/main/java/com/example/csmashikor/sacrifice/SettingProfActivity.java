@@ -5,6 +5,7 @@ import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import Shigemi.ChildStatus;
@@ -12,6 +13,7 @@ import Shigemi.ChildStatus;
 public class SettingProfActivity extends AppCompatActivity {
 
     ChildStatus CS = new ChildStatus();
+    private EditText editcall = findViewById(R.id.editCall);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +45,7 @@ public class SettingProfActivity extends AppCompatActivity {
     }
 
     public void otherButtonTapped(View view){
+
         //IMEを開く
     }
 
