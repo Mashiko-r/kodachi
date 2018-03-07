@@ -2,10 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.csmashikor.sacrifice">
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.CAMERA" />
 
-    <uses-feature android:name="android.hardware.camera" />
 
     <application
         android:allowBackup="true"
@@ -24,8 +21,12 @@
         <activity
             android:name=".SettingActivity"
             android:label="@string/title_activity_settings" />
-        <activity android:name=".SettingActivity" />
         <activity android:name=".ChooseSettingActivity"></activity>
+        <activity android:name=".SettingProfActivity"></activity>
+        <activity android:name=".CameraActivity"></activity>
     </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
+    <uses-feature android:name="android.hardware.camera" />
 </manifest>

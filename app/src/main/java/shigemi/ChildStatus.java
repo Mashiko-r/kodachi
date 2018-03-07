@@ -35,12 +35,25 @@ public class ChildStatus {
         editor.commit();
     }
 
+    //誕生日はIntで管理します
 
-    public void setChildStatus(ChildStatus CS){ //セッター
-        this.name = CS.name;
-        this.birth = CS.birth;
-        this.sex = CS.sex;
-        this.nickName = CS.nickName;
-    }                                           //返却なし
+
+    public int getSex(){
+        return pref.getInt("CHILD_SEX",0);
+    }
+
+    public void setSex(int i){
+        editor.putInt("CHILD_SEX",i);
+        editor.commit();
+    }
+
+    public String getNickName(){
+        return pref.getString("CHILD_NICKNAME","さん");
+    }
+
+    public void setNickName(String s){
+        editor.putString("CHILD_NICKNAME",s);
+        editor.commit();
+    }
 
 }
