@@ -10,10 +10,8 @@ import android.content.Intent;
 public class CameraMan {
 
     /*public ChildPic tookPic(){
-    //カメラ起動
+        //カメラ起動
     }
-
-
 
     public ChildPic choosePic() {
         //既存の写真から選択

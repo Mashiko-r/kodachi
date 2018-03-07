@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void plusButtonTapped(View view){
        //カメラアプリへ遷移
-        Intent intentCamera = new Intent();
+        Intent intentCamera = new Intent(this,CameraActivity.class);
         startActivity(intentCamera);
     }
 
