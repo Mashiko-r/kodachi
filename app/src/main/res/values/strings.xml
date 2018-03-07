@@ -188,4 +188,9 @@
     <string name="chan">ちゃん</string>
     <string name="other">その他</string>
     <string name="input">入力</string>
+    <string name="homePicSetting">home設定</string>
+    <string name="picBotton">・・・</string>
+    <string name="picRadio1">お気に入りからランダム</string>
+    <string name="picRadio２">すべての写真からランダム</string>
+    <string name="picRadio３">選択する</string>
 </resources>
