@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\cskawasaki.k\Documents\My Videos\kodachi\app\app.iml" filepath="C:\Users\cskawasaki.k\Documents\My Videos\kodachi\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/kodachi.iml" filepath="$PROJECT_DIR$/kodachi.iml" />
+      <module fileurl="file://C:\Users\cskawasaki.k\Documents\My Videos\kodachi\kodachi.iml" filepath="C:\Users\cskawasaki.k\Documents\My Videos\kodachi\kodachi.iml" />
     </modules>
   </component>
 </project>
