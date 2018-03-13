@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
+        android:text="@string/homesetting"
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/picRadioGroup"
@@ -28,6 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
+        android:text="@string/homePicSetting"
         app:layout_constraintBottom_toTopOf="@+id/picRadioGroup"
         app:layout_constraintEnd_toStartOf="@+id/picRadioGroup"
         app:layout_constraintStart_toStartOf="@+id/picRadioGroup"
@@ -50,6 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:text="@string/picRadio1"
             tools:text="@string/picRadio1" />
 
         <RadioButton
@@ -57,7 +60,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="RadioButton"
+            android:text="@string/picRadio２"
             tools:text="@string/picRadio２" />
 
         <RadioButton
@@ -65,6 +68,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:text="@string/picRadio３"
             tools:text="@string/picRadio３" />
 
     </RadioGroup>
@@ -76,12 +80,11 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="60dp"
-        android:text="Button"
+        android:text="@string/picBotton"
         app:layout_constraintEnd_toEndOf="@+id/picRadioGroup"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/picRadioGroup"
-        app:layout_constraintTop_toTopOf="@+id/picRadioGroup"
-        tools:text="@string/picBotton" />
+        app:layout_constraintTop_toTopOf="@+id/picRadioGroup" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -104,6 +107,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:onClick="onBackButtonTapped"
+        android:text="@string/backbutton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.028"
         app:layout_constraintLeft_toLeftOf="parent"
