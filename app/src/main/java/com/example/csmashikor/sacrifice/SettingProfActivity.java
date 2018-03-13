@@ -41,50 +41,56 @@ public class SettingProfActivity extends AppCompatActivity {
     }
 
     public void boyButtonTapped(View view){
-        CS.setNickName("くん");
+        //CS.setNickName("くん");
         CS.setSex(1);
-        initialSetting();
+        nicknameSetting();
     }
 
     public void girlButtonTapped(View view){
-        CS.setNickName("ちゃん");
+       // CS.setNickName("ちゃん");
         CS.setSex(2);
-        initialSetting();
+        nicknameSetting();
     }
-
+/*
     public void kunButtonTapped(View view){
         CS.setNickName("くん");
-        initialSetting();
+        nicknameSetting();
     }
 
     public void chanButtonTapped(View view){
         CS.setNickName("ちゃん");
-        initialSetting();
+        nicknameSetting();
     }
+    */
 
     public void commitButtonTapped(View view){
         EditText editcall = findViewById(R.id.editCall);
         String nickname = editcall.getText().toString();
         CS.setNickName(nickname);
+        nameChangeButtonTapped();
         initialSetting();
-        //IMEを開く
-    }
 
-    public void nameChangeButtonTapped(View view){
+    }           //確定ボタン
+
+    public void nameChangeButtonTapped() {
         EditText editname = findViewById(R.id.editName);
         String name = editname.getText().toString();
         CS.setName(name);
-        initialSetting();
+        nameSetting();
+    }
 
+    public void nicknameSetting(){
+       TextView childNickName =findViewById(R.id.calledby);
+        childNickName.setText(CS.getNickName());
+    }
+    public void nameSetting(){
+        EditText childName = findViewById(R.id.editName);
+        childName.setText(CS.getName());
     }
 
     public void initialSetting(){
-        EditText childName = findViewById(R.id.editName);
-        TextView childNickName =findViewById(R.id.calledby);
-
-
-        childName.setText(CS.getName());
-        childNickName.setText(CS.getNickName());
+        nicknameSetting();
+        nameSetting();
     }
 
     public void onBackButtonTapped(View view){

@@ -26,7 +26,7 @@ import Shigemi.Notify;
 
 public class SettingActivity extends AppCompatActivity{
     Notify notify = new Notify();   //ここで無理やりtrueで作らされてる説
-    private TextView debugger;
+    //private TextView debugger;
     private int currentPicNotify;
 
 
@@ -49,8 +49,8 @@ public class SettingActivity extends AppCompatActivity{
                 Spinner spinner = (Spinner) adapterView;
                 String item = (String)spinner.getSelectedItem();
                 if(!item.isEmpty()){
-                    debugger = findViewById(R.id.debugger);
-                    debugger.setText(item + "が選択されたんじゃね？" + i + "←intの値" + l + "longの値");
+                    //debugger = findViewById(R.id.debugger);
+                   // debugger.setText(item + "が選択されたんじゃね？" + i + "←intの値" + l + "longの値");
                     TextView picnotify = findViewById(R.id.picNotifyNow);
                     picnotify.setText("現在の設定:"+item);
 

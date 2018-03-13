@@ -7,237 +7,211 @@
     tools:context="com.example.csmashikor.sacrifice.SettingProfActivity"
     tools:layout_editor_absoluteY="81dp">
 
-    <TextView
-        android:id="@+id/profsetting"
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.AppCompat.Button.Small"
         android:layout_width="wrap_content"
-        android:layout_height="33dp"
-        android:layout_marginEnd="8dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="@string/profilesetting"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="onBackButtonTapped"
+        android:text="@string/backbutton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/profbaby"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
-        android:text="@string/babyprof"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profsetting" />
-
-    <TextView
-        android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/namesetting"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profbaby" />
-
-    <Spinner
-        android:id="@+id/year"
-        android:layout_width="108dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="8dp"
-        android:entries="@array/prof_year"
-        android:spinnerMode="dialog"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/birthday" />
-
-    <TextView
-        android:id="@+id/birthday"
-        android:layout_width="91dp"
-        android:layout_height="22dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/birthdayname"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.158"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editName" />
-
-    <Spinner
-        android:id="@+id/month"
-        android:layout_width="95dp"
-        android:layout_height="24dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:entries="@array/month"
-        android:spinnerMode="dialog"
-        app:layout_constraintEnd_toStartOf="@+id/date"
-        app:layout_constraintStart_toEndOf="@+id/year"
-        app:layout_constraintTop_toBottomOf="@+id/birthday" />
-
-    <Spinner
-        android:id="@+id/date"
-        android:layout_width="90dp"
-        android:layout_height="24dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginTop="8dp"
-        android:entries="@array/birthdate"
-        android:spinnerMode="dialog"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/birthday" />
-
-    <TextView
-        android:id="@+id/sex"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/babysex"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.165"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/year" />
-
-    <Button
-        android:id="@+id/manbutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:onClick="boyButtonTapped"
-        android:text="@string/boy"
-        app:layout_constraintEnd_toStartOf="@+id/womanbutton"
-        app:layout_constraintHorizontal_bias="0.84"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sex" />
-
-    <Button
-        android:id="@+id/womanbutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="92dp"
-        android:layout_marginTop="8dp"
-        android:onClick="girlButtonTapped"
-        android:text="@string/girl"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sex" />
-
-    <TextView
-        android:id="@+id/calledby"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="108dp"
-        android:layout_marginTop="24dp"
-        android:text="@string/kun_san"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profbaby" />
-
-    <TextView
-        android:id="@+id/call"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/called"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.141"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/manbutton" />
-
-    <Button
-        android:id="@+id/callbykun"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="8dp"
-        android:onClick="kunButtonTapped"
-        android:text="@string/kun"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/call" />
-
-    <Button
-        android:id="@+id/callbychan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:onClick="chanButtonTapped"
-        android:text="@string/chan"
-        app:layout_constraintEnd_toStartOf="@+id/editCall"
-        app:layout_constraintStart_toEndOf="@+id/callbykun"
-        app:layout_constraintTop_toBottomOf="@+id/call" />
-
-    <EditText
-        android:id="@+id/editCall"
-        android:layout_width="88dp"
-        android:layout_height="45dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/input"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/call" />
-
-    <Button
-        android:id="@+id/nameCommitButton"
-        android:layout_width="55dp"
-        android:layout_height="40dp"
-        android:layout_marginBottom="396dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginTop="8dp"
-        android:onClick="nameChangeButtonTapped"
-        android:text="@string/kakutei"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profbaby" />
-
-    <Button
-        android:id="@+id/nickNameCommitButton"
-        android:layout_width="55dp"
-        android:layout_height="40dp"
+    <LinearLayout
+        android:layout_width="374dp"
+        android:layout_height="433dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginTop="8dp"
-        android:onClick="commitButtonTapped"
-        android:text="@string/kakutei"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editCall"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <EditText
-        android:id="@+id/editName"
-        android:layout_width="100dp"
-        android:layout_height="38dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/Settings"
-        app:layout_constraintEnd_toStartOf="@+id/calledby"
-        app:layout_constraintStart_toEndOf="@+id/name"
-        app:layout_constraintTop_toBottomOf="@+id/profbaby" />
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="2dp"
-        android:onClick="onBackButtonTapped"
-        android:text="Button"
-        app:layout_constraintEnd_toStartOf="@+id/profsetting"
-        app:layout_constraintTop_toTopOf="@+id/profsetting"
-        tools:text="@string/backbutton" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/profsetting"
+                android:layout_width="0dp"
+                android:layout_height="33dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:text="@string/profilesetting"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="57dp"
+                android:layout_height="29dp"
+                android:layout_weight="1"
+                android:text="@string/namesetting"
+                tools:layout_editor_absoluteX="80dp"
+                tools:layout_editor_absoluteY="27dp" />
+
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/Settings"
+                tools:layout_editor_absoluteX="135dp"
+                tools:layout_editor_absoluteY="27dp" />
+
+            <TextView
+                android:id="@+id/calledby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/kun_san"
+                tools:layout_editor_absoluteX="340dp"
+                tools:layout_editor_absoluteY="102dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/birthday"
+                android:layout_width="91dp"
+                android:layout_height="22dp"
+                android:layout_weight="1"
+                android:text="@string/birthdayname"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="73dp" />
+
+            <Spinner
+                android:id="@+id/year"
+                android:layout_width="108dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:entries="@array/prof_year"
+                android:spinnerMode="dialog"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="103dp" />
+
+            <Spinner
+                android:id="@+id/month"
+                android:layout_width="95dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:entries="@array/month"
+                android:spinnerMode="dialog"
+                tools:layout_editor_absoluteX="152dp"
+                tools:layout_editor_absoluteY="103dp" />
+
+            <Spinner
+                android:id="@+id/date"
+                android:layout_width="90dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:entries="@array/birthdate"
+                android:spinnerMode="dialog"
+                tools:layout_editor_absoluteX="238dp"
+                tools:layout_editor_absoluteY="103dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/babysex"
+                tools:layout_editor_absoluteX="62dp"
+                tools:layout_editor_absoluteY="135dp" />
+
+            <Button
+                android:id="@+id/manbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="boyButtonTapped"
+                android:text="@string/boy"
+                tools:layout_editor_absoluteX="92dp"
+                tools:layout_editor_absoluteY="161dp" />
+
+            <Button
+                android:id="@+id/womanbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="girlButtonTapped"
+                android:text="@string/girl"
+                tools:layout_editor_absoluteX="204dp"
+                tools:layout_editor_absoluteY="161dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/called"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="217dp" />
+
+            <EditText
+                android:id="@+id/editCall"
+                android:layout_width="88dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/input"
+                android:ems="10"
+                android:inputType="textPersonName"
+                tools:layout_editor_absoluteX="240dp"
+                tools:layout_editor_absoluteY="244dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/nickNameCommitButton"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_weight="1"
+                android:onClick="commitButtonTapped"
+                android:text="@string/kakutei"
+                tools:layout_editor_absoluteX="313dp"
+                tools:layout_editor_absoluteY="400dp" />
+        </LinearLayout>
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

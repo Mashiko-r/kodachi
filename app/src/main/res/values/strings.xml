@@ -193,4 +193,5 @@
     <string name="picRadio1">お気に入りからランダム</string>
     <string name="picRadio２">すべての写真からランダム</string>
     <string name="picRadio３">選択する</string>
+    <string name="notifysetting" >通知設定</string>
 </resources>
